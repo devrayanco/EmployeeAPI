@@ -12,7 +12,7 @@ app.get('/', (req: Request, res: Response) => {
   res.status(200).send('Bem-vindo ao meu backend!');
 });
 
-app.use('/api/users', userRoutes);
+app.use('/api/auth', userRoutes);
 app.use('/api/employees', employeeRoutes);
 
 export default async (req: NowRequest, res: NowResponse) => {
